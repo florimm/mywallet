@@ -1,0 +1,4 @@
+src/.idea/.idea.MyWallet/.idea
+src/MyWallet.Client/obj
+src/MyWallet.Domain/obj
+src/MyWallet.Host/obj

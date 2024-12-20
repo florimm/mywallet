@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWallet.Domain", "MyWallet.Domain\MyWallet.Domain.csproj", "{DECB3BA8-62B8-4831-8FEB-2EA000AAF070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWallet.Host", "MyWallet.Host\MyWallet.Host.csproj", "{83DD2B91-0E8D-481E-BAF9-9B0309B6FE42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWallet.Client", "MyWallet.Client\MyWallet.Client.csproj", "{9458D3C6-CD04-4CAF-BCB9-6869960413C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DECB3BA8-62B8-4831-8FEB-2EA000AAF070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECB3BA8-62B8-4831-8FEB-2EA000AAF070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECB3BA8-62B8-4831-8FEB-2EA000AAF070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECB3BA8-62B8-4831-8FEB-2EA000AAF070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DD2B91-0E8D-481E-BAF9-9B0309B6FE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DD2B91-0E8D-481E-BAF9-9B0309B6FE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DD2B91-0E8D-481E-BAF9-9B0309B6FE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DD2B91-0E8D-481E-BAF9-9B0309B6FE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9458D3C6-CD04-4CAF-BCB9-6869960413C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9458D3C6-CD04-4CAF-BCB9-6869960413C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9458D3C6-CD04-4CAF-BCB9-6869960413C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9458D3C6-CD04-4CAF-BCB9-6869960413C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
