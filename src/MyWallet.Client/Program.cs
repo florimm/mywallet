@@ -14,28 +14,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.MapGet("/{userId}/wallets", (string userId) =>
+        Results.Ok(new List<string>())).WithName("GetWalletsForUser");
 
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast");
+app.MapGet("/{userId}/wallets/{walletId}", (string userId, string walletId) =>
+        Results.Ok("")).WithName("GetSpecificWalletForUser");
+
+app.MapPost("/{userId}/wallets/{walletId}", (string userId, string walletId) =>
+    Results.Ok("")).WithName("AddNewPairToTrack");
+
+app.MapDelete("/{userId}/wallets/{walletId}/{pair}", (string userId, string walletId, string pair) =>
+    Results.Ok("")).WithName("RemovePair");
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
