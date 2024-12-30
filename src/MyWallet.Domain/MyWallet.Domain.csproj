@@ -7,11 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Orleans.CodeGenerator" Version="9.0.1">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.1" />
+        <PackageReference Include="Binance.Net" Version="10.14.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Orleans.Sdk" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Orleans.Streaming" Version="9.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MyWallet.Domain.Contracts\MyWallet.Domain.Contracts.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 @MyWallet.Client_HostAddress = http://localhost:5236
 
-GET {{MyWallet.Client_HostAddress}}/weatherforecast/
+POST {{MyWallet.Client_HostAddress}}/login
 Accept: application/json
 
 ###

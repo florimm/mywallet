@@ -2,3 +2,8 @@ src/.idea/.idea.MyWallet/.idea
 src/MyWallet.Client/obj
 src/MyWallet.Domain/obj
 src/MyWallet.Host/obj
+src/MyWallet.Client/bin/Debug
+src/MyWallet.Host/bin
+src/MyWallet.Domain.Contracts/obj
+src/MyWallet.Domain.Contracts/bin/Debug
+src/MyWallet.Domain/bin

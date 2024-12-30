@@ -9,6 +9,11 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Microsoft.Orleans.Client" Version="9.0.1" />
+        <PackageReference Include="Scalar.AspNetCore" Version="1.2.72" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MyWallet.Domain.Contracts\MyWallet.Domain.Contracts.csproj" />
     </ItemGroup>
 
 </Project>
